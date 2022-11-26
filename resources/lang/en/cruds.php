@@ -1,0 +1,178 @@
+<?php
+
+return [
+    'pos' => [
+        'title'          => 'Global Fire Services',
+        'title_singular' => 'User management',
+    ],
+    'customers'     => [
+        'title'          => 'Customers',
+        'title_singular' => 'Customer',
+        'fields'         => [
+            'id'                => 'ID',
+            'name'             => 'Name',
+            'email'             => 'Email',
+            'mobile'             => 'Mobile',
+            'address'             => 'Address',
+            'gender'             => 'Gender',
+            'created_at'        => 'Created at',
+            'updated_at'        => 'Updated at',
+            'deleted_at'        => 'Deleted at'
+        ],
+    ],
+    'suppliers'     => [
+        'title'          => 'Suppliers',
+        'title_singular' => 'Supplier',
+        'fields'         => [
+            'id'                => 'ID',
+            'name'             => 'Name',
+            'email'             => 'Email',
+            'mobile'             => 'Mobile',
+            'address'             => 'Address',
+            'gender'             => 'Gender',
+            'created_at'        => 'Created at',
+            'updated_at'        => 'Updated at',
+            'deleted_at'        => 'Deleted at'
+        ],
+    ],
+    'unit_types'     => [
+        'title'          => 'Unit Types',
+        'title_singular' => 'Unit Type',
+        'fields'         => [
+            'id'                => 'ID',
+            'name'             => 'Name',
+            'email'             => 'Email',
+            'created_at'        => 'Created at',
+            'updated_at'        => 'Updated at',
+            'deleted_at'        => 'Deleted at'
+        ],
+    ],
+    'products'     => [
+        'title'          => 'Products',
+        'title_singular' => 'Product',
+        'fields'         => [
+            'id'                => 'ID',
+            'sku'             => 'sku',
+            'name'             => 'name',
+            'purchase_price'             => 'Purchase Price',
+            'selling_price'             => 'Selling Price',
+            'current_stock'             => 'Current Stock',
+            'product_type'             => 'Product Type',
+            'catagory_id'             => 'Catagory',
+            'created_at'        => 'Created at',
+            'updated_at'        => 'Updated at',
+            'deleted_at'        => 'Deleted at'
+        ],
+    ],
+    'categories'     => [
+        'title'          => 'Categories',
+        'title_singular' => 'Catagory',
+        'fields'         => [
+            'id'                => 'ID',
+            'title'             => 'Title',
+            'created_at'        => 'Created at',
+            'updated_at'        => 'Updated at',
+            'deleted_at'        => 'Deleted at'
+        ],
+    ],
+    'sales'     => [
+        'title'          => 'Sales',
+        'title_singular' => 'Sale',
+        'fields'         => [
+            'id'                => 'ID',
+            'title'             => 'Title',
+            'created_at'        => 'Created at',
+            'updated_at'        => 'Updated at',
+            'deleted_at'        => 'Deleted at'
+        ],
+    ],
+    'users'           => [
+        'title'          => 'Users',
+        'title_singular' => 'User',
+        'fields'         => [
+            'id'                       => 'ID',
+            'id_helper'                => '',
+            'name'                     => 'Name',
+            'name_helper'              => '',
+            'email'                    => 'Email',
+            'email_helper'             => '',
+            'email_verified_at'        => 'Email verified at',
+            'email_verified_at_helper' => '',
+            'password'                 => 'Password',
+            'password_helper'          => '',
+            'roles'                    => 'Roles',
+            'roles_helper'             => '',
+            'remember_token'           => 'Remember Token',
+            'remember_token_helper'    => '',
+            'created_at'               => 'Created at',
+            'created_at_helper'        => '',
+            'updated_at'               => 'Updated at',
+            'updated_at_helper'        => '',
+            'deleted_at'               => 'Deleted at',
+            'deleted_at_helper'        => '',
+        ],
+    ],
+
+
+
+    'permission'     => [
+        'title'          => 'Permissions',
+        'title_singular' => 'Permission',
+        'fields'         => [
+            'id'                => 'ID',
+            'id_helper'         => '',
+            'title'             => 'Title',
+            'title_helper'      => '',
+            'created_at'        => 'Created at',
+            'created_at_helper' => '',
+            'updated_at'        => 'Updated at',
+            'updated_at_helper' => '',
+            'deleted_at'        => 'Deleted at',
+            'deleted_at_helper' => '',
+        ],
+    ],
+    'role'           => [
+        'title'          => 'Roles',
+        'title_singular' => 'Role',
+        'fields'         => [
+            'id'                 => 'ID',
+            'id_helper'          => '',
+            'title'              => 'Title',
+            'title_helper'       => '',
+            'permissions'        => 'Permissions',
+            'permissions_helper' => '',
+            'created_at'         => 'Created at',
+            'created_at_helper'  => '',
+            'updated_at'         => 'Updated at',
+            'updated_at_helper'  => '',
+            'deleted_at'         => 'Deleted at',
+            'deleted_at_helper'  => '',
+        ],
+    ],
+    'user'           => [
+        'title'          => 'Users',
+        'title_singular' => 'User',
+        'fields'         => [
+            'id'                       => 'ID',
+            'id_helper'                => '',
+            'name'                     => 'Name',
+            'name_helper'              => '',
+            'email'                    => 'Email',
+            'email_helper'             => '',
+            'email_verified_at'        => 'Email verified at',
+            'email_verified_at_helper' => '',
+            'password'                 => 'Password',
+            'password_helper'          => '',
+            'roles'                    => 'Roles',
+            'roles_helper'             => '',
+            'remember_token'           => 'Remember Token',
+            'remember_token_helper'    => '',
+            'created_at'               => 'Created at',
+            'created_at_helper'        => '',
+            'updated_at'               => 'Updated at',
+            'updated_at_helper'        => '',
+            'deleted_at'               => 'Deleted at',
+            'deleted_at_helper'        => '',
+        ],
+    ],
+];
