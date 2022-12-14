@@ -100,6 +100,14 @@
                             </div>
 
                             <div class="col-12 col-md-6 mb-3">
+                                <label for="gender">Current Stock</label>
+                                <input type="number" class="form-control" name="current_stock" placeholder="Current Stock" value="{{old('current_stock')}}" required>
+                                @if($errors->has('current_stock'))
+                                <div class="alert alert-danger">{{ $errors->first('current_stock') }}</div>
+                                @endif
+                            </div>
+
+                            <div class="col-12 col-md-6 mb-3">
                                 <label for="mobile">Category</label>
                                 <select class="form-control" name="category_id">
                                     <option disabled selected>--Select Option--</option>

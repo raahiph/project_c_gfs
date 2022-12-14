@@ -53,6 +53,7 @@ class ProductController extends Controller
             'units' => 'required',
             'price' => 'required',
             'unit_type_id' => 'required',
+            'current_stock' => 'required',
             'supplier_id' => 'required',
             'category_id' => 'required',
             'description' => 'bail',

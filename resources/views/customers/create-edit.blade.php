@@ -68,6 +68,11 @@
                   <div class="col-12 col-md-6 mb-3">
                     <label for="gender">Gender</label>
                     <input type="text" class="form-control" id="gender" name="gender" maxlength="1" size="1" placeholder="M for male, F for Female" value="{{ isset($customers) ? $customers->gender : ''}}" required>
+                    <!-- <select name="role_id" id="role_id" class="form-control" required>
+                      <option value=""></option>
+                      <option value="{{ isset($customers) ? $customers->gender : 'M'}}">Male</option>
+                      <option value="{{ isset($customers) ? $customers->gender : 'F'}}">Female</option>
+                    </select> -->
                   </div>
                 </div>
                 <br>

@@ -6,6 +6,8 @@ use App\Models\Customer;
 use App\Models\Product;
 use App\Models\Sale;
 use App\Models\Role;
+use App\Models\User;
+
 use PDF;
 use Mail;
 use App\Mail\RequestMail;
@@ -115,9 +117,9 @@ class SaleController extends Controller
         // Request Mail from Staff to Manager
         $product_name = $sale->product->name;
         $request_from = auth()->user()->name;
-        $to = 'halix90530@sopulit.com';
+        $to = 'inventory@gfs.raahifrafeeu.com';
         $title = 'Sale Request';
-        $body = 'Hey Manger, '. $product_name.' is requested from '.$request_from;
+        $body = 'Dear Manager, '. $product_name.' is requested from '.$request_from;
         $this->approve_mail($to, $title, $body);
 
         return redirect()

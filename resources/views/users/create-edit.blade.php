@@ -49,13 +49,23 @@
                   </div>
                   <div class="col-12 col-md-12 mb-3">
                     <label for="email">Email</label>
-                    <input type="text" class="form-control" id="email" name="email" placeholder="Email"
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email"
                      value="{{ isset($users) ? $users->email : ''}}" required>
                   </div>
                   <div class="col-12 col-md-12 mb-3">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Name"
-                     value="{{ isset($users) ? $users->name : ''}}" required>
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="email" name="password" placeholder="Password"
+                     value="{{ isset($users) ? $users->password : ''}}" required>
+                  </div>
+                  <div class="col-12 col-md-12 mb-3">
+                    <label for="name">Role</label>
+                    
+                    <select name="role_id" id="role_id" class="form-control">
+                      <option value="{{ isset($users) ? $users->role_id : '1'}}">Admin</option>
+                      <option value="{{ isset($users) ? $users->role_id : '2'}}">Inventory</option>
+                      <option value="{{ isset($users) ? $users->role_id : '3'}}">Staff</option>
+                    </select>
+    
                   </div>
                   {{-- <div class="col-12 col-md-6 mb-3">
                     <label for="email">Email</label>
